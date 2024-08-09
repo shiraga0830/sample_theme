@@ -1,0 +1,47 @@
+@charset "utf-8";
+/*
+Theme Name: Sample
+Theme URI: https://www.biko-sya.co.jp/
+Description: biko-sya
+Version: 1.0
+Author: biko-sya
+Author URI: https://www.biko-sya.co.jp/
+*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,
+em,font,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td{border:0;font-family:inherit;font-size:100%;font-style:inherit;font-weight:inherit;margin:0;outline:0;padding:0;vertical-align:baseline;}
+body{color:#555;line-height:1.5;}
+:focus{outline:0;}
+ol,ul{list-style:none;}
+table{border-collapse:separate;border-spacing:0;}
+caption,th,td{font-weight:normal;text-align:left;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote,q{quotes:"" "";}
+a img{border:0;}
+figure{margin:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+p,th,td,li,dt,dd,a,figcaption{font-size:14px;line-height:2;}
+p{margin-bottom:20px;}
+p:last-of-type{margin:0;}
+img{height:auto;max-width:100%;}
+blockquote{background-color:#EBEDF1;margin:0 0 20px;padding:15px 25px;border-left:5px solid #D3D5D9;}
+blockquote,blockquote p{font-style:italic;line-height:30px;}
+blockquote p{margin-bottom:0!important;}
+blockquote cite,blockquote small{color:#242526;font-size:15px;display:block;line-height:20px;padding-top:15px;}
+blockquote em,blockquote i,blockquote cite{font-style:normal;}
+blockquote strong,blockquote b{font-weight:700;}
+a{color:#cc0000;text-decoration:none;}
+a:hover{color:#b30322;}
+a:active,a:focus{outline:0;}
+input,textarea{vertical-align:middle;max-width:90%;line-height:24px;height:24px;padding:1px 5px;border:1px solid #ccc;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;font-size:100%;color:#555;}
+textarea{height:auto;line-height:1.5;}
+input[type="submit"],input[type="reset"],input[type="button"]{padding:3px 10px;background:#5c4d41;border:0;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;line-height:1.5;height:auto;font-size:110%;color:#fff;}
+input[type="submit"]:hover,input[type="reset"]:hover,input[type="button"]:hover{background:#e4e4e4;cursor:pointer;}
+
+/* COMMON
+---------------------------------------*/
+#wrapper{margin:0 auto;padding:35px 20px 50px;position:relative;}
+#content{margin:0 auto;width:100%;max-width:1200px;}
+@media only screen and (min-width:768px){
+	#wrapper{margin:0 auto;padding:70px 20px 100px;position:relative;}
+}
