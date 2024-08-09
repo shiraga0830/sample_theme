@@ -1,2 +1,4 @@
-## Revision history
-2024/08/09:upload files to github
+## 修正履歴
+2024/04/26：訂正
+
+2024/04/26：訂正

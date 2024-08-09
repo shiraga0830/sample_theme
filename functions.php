@@ -83,3 +83,16 @@ function kriesi_pagination($pages = '', $range = 2){
 		echo "</ul>\n";
 	}
 }
+
+/* Shortcodes
+/*--------------------------------*/
+function Include_my_php($params = array()) {
+	$place = get_template() . '/inc';
+	extract(shortcode_atts(array(
+		'file' => 'default'
+	), $params));
+	ob_start();
+	include(get_theme_root() . '/' . $place . "/$file.php");
+	return ob_get_clean();
+}
+add_shortcode('myphp', 'Include_my_php');

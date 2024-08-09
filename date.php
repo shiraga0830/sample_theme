@@ -15,18 +15,17 @@
 	'paged' => $paged);
 $the_query = new WP_Query($args);
 if(have_posts()): while(have_posts()):the_post(); ?>
-			<dl>
+			<dl class="news">
 				<dt><?php the_time('Y/m/d');?><?php
 $category = get_the_category();
 if ($category[0]) {
-	echo '<a href="' . get_category_link($category[0]->term_id) . '">' . $category[0]->cat_name . '</a>';
-}
-?></dt>
+	echo '<a class="cate" href="' . get_category_link($category[0]->term_id) . '">' . $category[0]->cat_name . '</a>';
+} ?></dt>
 				<dd><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></dd>
 			</dl>
 <?php endwhile;
-	endif; ?>
-		<?php the_posts_pagination(array('screen_reader_text'=>'')); ?>
+	endif;
+	the_posts_pagination(array('screen_reader_text'=>'')); ?>
 	</div>
 </div>
 <?php get_footer(); ?>
