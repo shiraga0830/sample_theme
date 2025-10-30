@@ -1,6 +1,7 @@
 <?php
 if(!function_exists('output_breadcrumb')){
 	function output_breadcrumb(){
+	global $post;
 	$post_name = get_the_title(get_option('page_for_posts'));
 	$post_link = get_permalink(get_option('page_for_posts'));
 	if(is_front_page()) return false;
