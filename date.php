@@ -1,14 +1,17 @@
-<?php get_header(); ?>
+<?php get_header();
+$page_id = get_option('page_for_posts');
+$page_title = get_the_title($page_id);
+?>
 <div id="page-header">
 	<div id="page-inner">
 		<div id="page-text">
-			<h2 class="title topfade"><?php _e('News', 'sample'); ?></h2>
+			<h2 class="title topfade"><?php echo $page_title; ?></h2>
 		</div>
 	</div>
 </div>
 <?php output_breadcrumb(); ?>
-<div id="wrapper">
-	<div id="content">
+<div id="content">
+	<div class="inner">
 <?php $args = array(
 	'post_type' => 'post',
 	'posts_per_page' => 8,
