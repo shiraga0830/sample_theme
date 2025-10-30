@@ -6,6 +6,9 @@ function sample_scripts(){
 	wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js');
 	wp_enqueue_style('menu', get_template_directory_uri() . '/css/menu.css');
 	wp_enqueue_style('custom', get_template_directory_uri() . '/css/custom.css');
+	if(is_page_template('template/top-page.php')){
+		wp_enqueue_style('top', get_template_directory_uri() . '/css/top.css');
+	}
 }
 add_action('wp_enqueue_scripts', 'sample_scripts');
 
