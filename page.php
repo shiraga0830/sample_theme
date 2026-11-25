@@ -12,13 +12,11 @@
 </div>
 <?php output_breadcrumb(); ?>
 <div id="wrapper">
-	<div id="content">
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<div id="post-<?php the_ID(); ?>" class="page">
+	<div id="post-<?php the_ID(); ?>" class="content">
 <?php the_content(); ?>
-		</div>
+	</div>
 <?php endwhile;
 endif; ?>
-	</div>
 </div>
 <?php get_footer(); ?>
