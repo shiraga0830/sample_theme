@@ -3,7 +3,7 @@
  * Template Name: Wide Page */
 get_header();
 ?>
-<?php if(has_post_thumbnail()):?>
+<?php if(has_post_thumbnail()): ?>
 <div id="page-header" style="background-image:url(<?php echo the_post_thumbnail_url(); ?>);">
 <?php else: ?>
 <div id="page-header">
