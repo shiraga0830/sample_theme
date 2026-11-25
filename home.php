@@ -2,7 +2,7 @@
 <div id="page-header">
 	<div id="page-inner">
 		<div id="page-text">
-			<h2 class="title topfade"><?php _e('News', 'tam'); ?></h2>
+			<h2 class="title topfade"><?php _e('News', 'sample'); ?></h2>
 		</div>
 	</div>
 </div>
