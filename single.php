@@ -7,7 +7,7 @@
 	</div>
 </div>
 <?php output_breadcrumb(); ?>
-<div id="main">
+<div id="wrapper">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 	<div id="post-<?php the_ID(); ?>" class="content">
 		<h3 class="heading"><?php the_title(); ?></h3>
