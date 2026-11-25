@@ -5,7 +5,7 @@
 	'container' => '',
 )); ?>
 	</div>
-	<p id="copyright">Copyright &copy; <?php echo date('Y'); ?> biko-sya.All Rights Reserved.</p>
+	<p id="copyright">Copyright &copy; <?php echo date('Y'); ?> sample.All Rights Reserved.</p>
 </footer>
 <?php wp_footer(); ?>
 <script src="<?php bloginfo('template_url'); ?>/js/menu.js"></script>
