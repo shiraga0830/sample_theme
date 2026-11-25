@@ -10,8 +10,8 @@ $page_title = get_the_title($page_id);
 	</div>
 </div>
 <?php output_breadcrumb(); ?>
-<div id="content">
-	<div class="inner">
+<div id="wrapper">
+	<div id="content">
 <?php $args = array(
 	'post_type' => 'post',
 	'posts_per_page' => 8,
