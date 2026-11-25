@@ -7,8 +7,8 @@
 	</div>
 </div>
 <?php output_breadcrumb(); ?>
-<div id="content">
-	<div class="inner">
+<div id="wrapper">
+	<div id="content">
 <?php
 $args = array(
 	'post_type' => 'post',
